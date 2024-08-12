@@ -1,4 +1,7 @@
-
+/*Pavithra Deepu E
+S3 CSAI
+Roll No 47
+Program to check whether a given string is Palindrome or not.*/
 import java.util.*;
 
 class palindrome
