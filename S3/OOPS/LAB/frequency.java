@@ -1,3 +1,7 @@
+/*Pavithra Deepu E
+S3 CSAI
+Roll No 47
+Program to find frequency of a letter in a string.*/
 import java.util.*;
 class frequency
 	{
