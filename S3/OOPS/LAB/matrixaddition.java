@@ -1,3 +1,7 @@
+/*Pavithra Deepu E
+S3 CSAI
+Roll No 47
+Program ro find the sum of two matrices*/
 import java.util.*;
 class matrixaddition
 {
