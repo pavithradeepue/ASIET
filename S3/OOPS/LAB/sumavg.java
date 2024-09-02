@@ -13,7 +13,7 @@ class sumavg
             int b=S1.nextInt(); 
             int c=S1.nextInt();
             int sum=a+b+c;
-            int avg = sum/2;
+            int avg = sum/3;
             System.out.println ("The sum of is:" +sum);
             System.out.println("The average of the numbers is "+avg);
             S1.close();
