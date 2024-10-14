@@ -78,6 +78,7 @@ class employeeprinting{
 		System.out.println("Phone number:\t" + m.phonenumber);
 		m.printsal();
 		System.out.println("Department:\t" + m.dep);
+		S1.close();
    
 		}
 }
