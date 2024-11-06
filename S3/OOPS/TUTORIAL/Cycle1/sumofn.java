@@ -1,3 +1,7 @@
+/*Pavithra Deepu E
+CSE AI 47
+Program for finding sum of given numbers without using Array.
+TUTORIAL*/
 import java.util.Scanner;
 
 class sumofnumbers {
