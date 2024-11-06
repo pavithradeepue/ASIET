@@ -1,5 +1,6 @@
 /*Pavithra Deepu E
-S3 CSE AI 47*/
+S3 CSE AI 47
+Java program to read and write to a file by handling all file exceptions.*/
 Import java.io.FileReader;
 Import java.io.FileWriter;
 Import java.io.IOException;
