@@ -1,3 +1,7 @@
+/*Pavithra Deepu E
+CSE AI 47
+Program for printing the Multiplication Table.
+TUTORIAL*/
 import java.util.*;
 class multiplicationtable
 {
