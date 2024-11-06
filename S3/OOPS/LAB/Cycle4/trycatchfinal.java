@@ -1,5 +1,6 @@
 /*Pavithra Deepu E
-S3 CSE AI 47*/
+S3 CSE AI 47
+Program to show the use of Try, Catch, Finally and Throwes block*/
 import java.util.*;
 class Excep{
  public static void main(String[] args){
