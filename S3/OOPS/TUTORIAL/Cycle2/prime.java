@@ -1,3 +1,7 @@
+/*Pavithra Deepu E
+CSE AI 47
+Program for check whether a given number is prime or not.
+TUTORIAL*/
 import java.util.*;
 public class primeornot 
 {
