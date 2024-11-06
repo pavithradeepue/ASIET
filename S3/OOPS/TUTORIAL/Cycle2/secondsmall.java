@@ -1,3 +1,7 @@
+/*Pavithra Deepu E
+CSE AI 47
+Program for finding the second smallest element in an Array.
+TUTORIAL*/
 import java.util.Scanner;
 
 class secondsmallest {
