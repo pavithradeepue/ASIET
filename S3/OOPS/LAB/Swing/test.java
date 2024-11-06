@@ -1,6 +1,6 @@
 /*Pavithra Deepu E
 CSE AI 47
-Program to show a Login page */
+Program to demostrate swing */
 
 import javax.swing.*;
 import java.awt.*;
