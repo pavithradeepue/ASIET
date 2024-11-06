@@ -1,3 +1,7 @@
+/*Pavithra Deepu E
+CSE AI 47
+Program for printing out all prime numbers until a given Integer.
+TUTORIAL*/
 class primeuntil
 {
 	public static void main(String args[])
@@ -18,12 +22,6 @@ class primeuntil
                     
                     }
                     count=0;
-                
-		
-		  
-		
-		
-		
 }
 }
 }
