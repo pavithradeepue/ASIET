@@ -1,3 +1,7 @@
+/*Pavithra Deepu E
+CSE AI 47
+Progrm for finding sum of digits of an Integer.
+TUTORIAL*/
 import java.util.*;
 class sumofdigits
 {
