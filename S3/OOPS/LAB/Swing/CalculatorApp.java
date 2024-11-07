@@ -1,3 +1,6 @@
+/*Pavithra Deepu E
+S3 CSE AI 47
+Java program to implement a Traffic Light*/
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
