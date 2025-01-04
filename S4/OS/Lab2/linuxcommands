@@ -76,3 +76,9 @@ student@dl-16:~/Desktop/Pavithra47$ uptime
  15:58:05 up 39 min,  1 user,  load average: 0.09, 0.10, 0.13
 student@dl-16:~/Desktop/Pavithra47$ uname
 Linux
+student@dl-16:~/Desktop/Pavithra47$ cat > Filemanipulation
+
+student@dl-16:~/Desktop/Pavithra47$ cat > File2
+student@dl-16:~/Desktop/Pavithra47$ cat File2
+Hello
+My name is Pavithra
