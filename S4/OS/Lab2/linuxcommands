@@ -82,3 +82,18 @@ student@dl-16:~/Desktop/Pavithra47$ cat > File2
 student@dl-16:~/Desktop/Pavithra47$ cat File2
 Hello
 My name is Pavithra
+student@dl-16:~/Desktop/Pavithra47$ grep Hello File2
+Hello
+student@dl-16:~/Desktop/Pavithra47$ rm File0
+student@dl-16:~/Desktop/Pavithra47$ touch Simplefile
+student@dl-16:~/Desktop/Pavithra47$ mv Simplefile RenamedFile
+student@dl-16:~/Desktop/Pavithra47$ cut -c 1-7 File2
+Hello
+My name
+
+student@dl-16:~/Desktop/Pavithra47$ head File2
+Hello
+My name is Pavithra
+student@dl-16:~/Desktop/Pavithra47$ tail File2
+Hello
+My name is Pavithra
