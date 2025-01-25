@@ -1,3 +1,4 @@
+#Program to operate an arithemetic calculator.
 x=1
 while [ $x -eq 1 ]
 do
