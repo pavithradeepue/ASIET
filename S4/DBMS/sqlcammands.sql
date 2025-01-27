@@ -18,4 +18,5 @@ select ord_no,ord_date,purch_amt from orders1 where salesman_id =101;
 create table nobel_win1(year number(4), subject char(5), winner char(10), country char(3), cat char(5))
 insert into nobel_win1 values(&year,'&subject','&winner','&country', '&cat');
 select year,subject,winner from nobel_win1 where year=1990;
-
+select winner from nobel_win1 where year=1990 AND subject='Eng';
+select year,subject from nobel_win1 where winner='Nelson';
