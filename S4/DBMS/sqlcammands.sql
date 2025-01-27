@@ -22,3 +22,6 @@ select winner from nobel_win1 where year=1990 AND subject='Eng';
 select year,subject from nobel_win1 where winner='Nelson';
 select winner from nobel_win1 where subject='Phy' AND year > 1950;
 select year,winner,country from nobel_win1 where subject='CHEM' AND year>=1965 AND year<=2025;
+select * from nobel_win1 where (subject='Eng' AND year=1990) UNION (select * from nobel_win1 where (subject='Phy' AND year=2022));
+select * from nobel_win1 where year = 1990 and subject not in('Phy','Chem');
+select * from nobel_win1 where subject NOT LIKE 'P%' order by year DESC; #or  asc
