@@ -11,3 +11,6 @@ insert into orders1 values(&ord_no,&purch_amt,'&ord_date',&cust_id,&salesman_id)
 select salesman_id,name,commission from salesman1;
 select ord_date,salesman_id,ord_no,purch_amt from orders1;
 select distinct salesman_id from orders1;
+select name from salesman1 WHERE city = 'aluva';
+select * from customer1 where Grade ='A';
+select ord_no,ord_date,purch_amt from orders1 where salesman_id =101;
