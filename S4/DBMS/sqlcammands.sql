@@ -21,3 +21,4 @@ select year,subject,winner from nobel_win1 where year=1990;
 select winner from nobel_win1 where year=1990 AND subject='Eng';
 select year,subject from nobel_win1 where winner='Nelson';
 select winner from nobel_win1 where subject='Phy' AND year > 1950;
+select year,winner,country from nobel_win1 where subject='CHEM' AND year>=1965 AND year<=2025;
