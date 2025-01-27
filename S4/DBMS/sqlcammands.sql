@@ -7,3 +7,7 @@ create table customer1(cust_id number(5), cust_name char(15), city char(5), grad
 insert into salesman1 values(&salesman_id,'&name','&city',&commission);
 
 insert into orders1 values(&ord_no,&purch_amt,'&ord_date',&cust_id,&salesman_id);
+
+select salesman_id,name,commission from salesman1;
+select ord_date,salesman_id,ord_no,purch_amt from orders1;
+select distinct salesman_id from orders1;
