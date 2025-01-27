@@ -14,3 +14,7 @@ select distinct salesman_id from orders1;
 select name from salesman1 WHERE city = 'aluva';
 select * from customer1 where Grade ='A';
 select ord_no,ord_date,purch_amt from orders1 where salesman_id =101;
+
+insert into nobel_win1 values(&year,'&subject','&winner','&country', '&cat');
+select year,subject,winner from nobel_win1 where year=1990;
+
