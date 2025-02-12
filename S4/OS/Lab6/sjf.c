@@ -14,19 +14,21 @@ void main()
 		scanf("%d",&bt[i]);
 	}
 	for(i=0;i<n-1;i++){
-		for(j=j+1;j<n;j++){
-		if(bt[i]>bt[j+1])
+		for(j=j+1;j<n-i-1;j++){
+		if(bt[j]>bt[j+1])
 		{
-			temp = p[j];
-			p[j] = p[j+1];
-			p[j+1] = temp;
 			temp = bt[j];
 			bt[j] = bt[j+1];
 			bt[j+1] = temp;
+
+            temp = p[j];
+			p[j] = p[j+1];
+			p[j+1] = temp;
 		}		
 	}
 	}
 	wt[0]=0;
+    avgwt = 0;
 	for(i=1;i<n;i++)
 	{
 		wt[i] = bt[i-1] + wt[i-1];
@@ -64,33 +66,3 @@ void main()
 	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
