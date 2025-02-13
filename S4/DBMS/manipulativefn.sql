@@ -113,8 +113,8 @@ SQL> @dbms.sql
 ----------
 	 2
 
-
-
+6. select s.name from sailors s where s.sid IN(select r.sid from reserves r where r.bid = 5)
+7. 
 
 
 
