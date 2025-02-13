@@ -114,9 +114,44 @@ SQL> @dbms.sql
 	 2
 
 6. select s.name from sailors s where s.sid IN(select r.sid from reserves r where r.bid = 5)
-7. 
+7. select s.name,s.age from sailors s where s.age <= ALL(select age from sailors);
+
+	select sysdate from dual;
+SYSDATE
+--------
+13-02-25
+
+	select NEXT_DAY(sysdate,'Wed') from dual;
+NEXT_DAY
+--------
+19-02-25
+	
+select MONTHS_BETWEEN(sysdate,hiredate) from emp;
+	select least('10-jan-2005','12-oct-2023') from dual;
+LEAST('10-J
+-----------
+10-jan-2005
+
+	
+	select greatest('10-jan-2005','12-oct-2023') from dual;
+GREATEST('1
+-----------
+12-oct-2023
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 
 
