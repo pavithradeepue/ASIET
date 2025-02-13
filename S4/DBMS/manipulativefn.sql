@@ -76,7 +76,7 @@ TRIM('A
 -------
 Android
   
-select REPLACE('Data management','Data','DAtabase') from dual;
+select REPLACE('Data management','Data','Database') from dual;
 REPLACE('DATAMANAGE
 -------------------
 Database management
