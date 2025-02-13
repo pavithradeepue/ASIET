@@ -106,6 +106,16 @@ SQL> @dbms.sql
 	 1
 	 5
 
+select s.sid from sailors s,boat b,reserves r where s.sid = r.sid and r.bid = b.bid and b.color ='red' MINUS select s2.sid from sailors s2,boat b2,reserves r2 where  s2.sid = r2.sid and r2.bid = b2.bid and b2.color ='yellow' ;
+SQL> @dbms.sql
+
+       SID
+----------
+	 2
+
+
+
+
 
 
 
