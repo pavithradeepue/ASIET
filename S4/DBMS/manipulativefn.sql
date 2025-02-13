@@ -85,6 +85,9 @@ Database management
 
 
 
+create table sailors(sid int primary key,sname varchar(10),rating int,age int check(age>16 and age<100));
+create table boat(bid int primary key,bname char(10),color char(10));
+create table reserves(sid int,bid int, day date,foreign key(sid) references sailors(sid),foreign key(bid) references boat(bid));
 
 
 
