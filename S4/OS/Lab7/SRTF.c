@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n, at[10], bt[10], ct[10], wt[10], temp[10], tat[10], p[10];
+    int n, at[10], bt[10], ct[10], wt[10], temp[10], tt[10], p[10];
     int smallest, count = 0, time, end = 0;
     double avg_wt = 0, avg_tt = 0;
 
@@ -12,11 +12,11 @@ int main() {
     for (int i = 0; i < n; i++) {
         printf("P%d: ", i + 1);
         scanf("%d %d", &at[i], &bt[i]);
-        temp[i] = bt[i];  // Copy burst time for calculations
-        p[i] = i + 1;     // Store process ID
+        temp[i] = bt[i];  
+        p[i] = i + 1;   
     }
 
-    bt[9] = 9999;  // A large number for comparison
+    bt[9] = 9999; 
 
     for (time = 0; count != n; time++) {
         smallest = 9;
@@ -31,24 +31,39 @@ int main() {
         if (bt[smallest] == 0) {
             count++;
             end = time + 1;
-            ct[smallest] = end;  // Completion time
-            tat[smallest] = ct[smallest] - at[smallest];  // Turnaround time
-            wt[smallest] = tat[smallest] - temp[smallest]; // Waiting time
+            ct[smallest] = end;  
+            tt[smallest] = ct[smallest] - at[smallest];  
+            wt[smallest] = tt[smallest] - temp[smallest]; 
         }
     }
 
-    printf("\n------------------------------------------------------\n");
-    printf("Prcs\tAT\tBT\tCT\tTAT\tWT\n");
-    printf("------------------------------------------------------\n");
+    
+    printf("Process Id\tArrival Time\tBurst Time\tCompletion Time\tTurnaround Time\tWaiting Time\n");
+
     for (int i = 0; i < n; i++) {
-        printf("P%d\t%d\t%d\t%d\t%d\t%d\n", p[i], at[i], temp[i], ct[i], tat[i], wt[i]);
-        avg_tt += tat[i];
+        printf("P%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%d\n", p[i], at[i], temp[i], ct[i], tt[i], wt[i]);
+        avg_tt += tt[i];
         avg_wt += wt[i];
     }
 
-    printf("------------------------------------------------------\n");
+    printf("-------------------------------------------------------------------------------\n");
     printf("\nAverage Turnaround Time: %.2f\n", avg_tt / n);
     printf("Average Waiting Time: %.2f\n", avg_wt / n);
-
+    
+    printf("Gantt Chart\n");
+    printf("----------------------------------------------------------------------------------\n");
+    for(int i=0;i<n;i++)
+	{
+		printf("|\tP%d\t|",p[i]);
+	}
+	printf("\n");
+	printf("----------------------------------------------------------------------------------\n");
+	printf("0\t\t");
+	for(int i=0;i<n;i++)
+	{
+		printf("%d\t\t",ct[i]);
+	}
+	printf("\n");
+	
     return 0;
 }
