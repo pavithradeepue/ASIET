@@ -1,4 +1,4 @@
-// Preemptive Priority Scheduling
+
 #include <stdio.h>
 
 int main() {
@@ -14,9 +14,10 @@ int main() {
         printf("P%d: ", i + 1);
         scanf("%d %d %d", &at[i], &bt[i], &pr[i]);
         temp[i] = bt[i];
+        p[i]=i+1;
     }
 
-    bt[9] = 9876;  // A high value to ensure valid comparisons
+    pr[9] = 9876;  
 
     for(time = 0; count != n; time++) {
         smallest = 9;
@@ -49,6 +50,22 @@ int main() {
     printf("--------------------------------------------------\n");
     printf("\nAverage Turn Around Time is : %.6lf\n", avg_tt / n);
     printf("Average Waiting Time is : %.6lf\n", avg_wt / n);
+    
+    printf("Gantt Chart\n");
+    printf("----------------------------------------------------------------------------------\n");
+    for(int i=0;i<n;i++)
+	{
+		printf("|\tP%d\t|",p[i]);
+	}
+	printf("\n");
+	printf("----------------------------------------------------------------------------------\n");
+	printf("0\t\t");
+	for(int i=0;i<n;i++)
+	{
+		printf("%d\t\t",ct[i]);
+	}
+	printf("\n");
+	
 
     return 0;
 }
