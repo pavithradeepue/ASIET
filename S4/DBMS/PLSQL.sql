@@ -47,3 +47,12 @@ BEGIN
    ELSE
     v_total := i.rent + (40*0.40) + (i.unit - 80) * 1.40;
    END IF;
+   UPDATE electricity
+   SET total = v_total
+   WHERE cons_id = i.cons_id;
+  END; -- End inner block
+ END LOOP;
+ 
+ COMMIT; --Ensures all update are saved permanentaly
+END;
+/
