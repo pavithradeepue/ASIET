@@ -1,3 +1,4 @@
+/*PROCEDURE*/
 DECLARE 
 a number;
 b number;
@@ -24,3 +25,5 @@ SQL> @PLsql.sql
 Minimum of (23,45): 23
 
 PL/SQL procedure successfully completed.
+
+/*FUNCTION*/
