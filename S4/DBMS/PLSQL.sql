@@ -27,3 +27,4 @@ Minimum of (23,45): 23
 PL/SQL procedure successfully completed.
 
 /*FUNCTION*/
+create table customer10(id number(5) primary key, name char(15),salary number(10));
