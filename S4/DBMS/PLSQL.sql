@@ -56,3 +56,16 @@ BEGIN
  COMMIT; --Ensures all update are saved permanentaly
 END;
 /
+
+SQL> @PLsql.sql
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from electricity;
+
+CONS NAME		   RENT       UNIT	TOTAL
+---- --------------- ---------- ---------- ----------
+1    Pavithra		     20 	20	   20
+2    Roshan		     20 	30	   20
+3    Sidharth		     20 	35	   20
+
