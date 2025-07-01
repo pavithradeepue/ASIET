@@ -1,0 +1,17 @@
+>>> type(1)
+<class 'int'>
+>>> type(True)
+<class 'bool'>
+>>> type(1J)
+<class 'complex'>
+
+>>> type('Pavithra')
+<class 'str'>
+>>> type([1,2,3])
+<class 'list'>
+>>> type((1,2,3))
+<class 'tuple'>
+>>> type({1,2,3})
+<class 'set'>
+>>> type({'1':3})
+<class 'dict'>
