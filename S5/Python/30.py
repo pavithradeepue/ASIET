@@ -1,6 +1,6 @@
 #average
 #convert temp def
-#recursive sum of nat numbers
+#recursive sum of n numbers
 
 #Program to count vowels and consonants
 s = input("Enter a string: ")
