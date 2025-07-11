@@ -1,11 +1,11 @@
 s = input("Enter the sentence: ")
 words = s.split()
-occurence={}
+occurance={}
 for word in words:
-	if word in occurence:
-		occurence[word]+=1
+	if word in occurance:
+		occurance[word]+=1
 	else:
-		occurence[word]=1
-print("Word Occurence\n")
-for word,count in occurence.items():
+		occurance[word]=1
+print("Word Occurance\n")
+for word,count in occurance.items():
 	print(word,":",count)
