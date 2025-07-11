@@ -1,0 +1,6 @@
+l1 = list(map(int,input("Enter the first list: ").split()))
+l2 = list(map(int,input("Enter the second list: ").split()))
+union = set(l1) | set(l2)
+inter = set(l1) & set(l2)
+print("The union is: ",list(union))
+print("The intersect is: ",list(inter))
