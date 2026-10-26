@@ -1,0 +1,83 @@
+STUDENT DROPOUT PREDICTION - VERIFIED RUN
+Deep Learning Course Project | Roll Nos. 46, 47, 48
+====================================================================
+
+These values were produced by executing the submitted notebook on the
+supplied real data.csv. No original screenshot values were copied into
+the results. Positive label: Dropout. Negative label: Graduate.
+
+4,424 input records; 3,630 resolved outcomes; 794 Enrolled records excluded
+from supervised learning. Train/validation/test: 2,178 / 726 / 726.
+Test composition: 284 Dropout and 442 Graduate.
+
+HELD-OUT TEST RESULTS
+
+First-semester | NN
+  Validation-selected threshold: 0.15
+  Accuracy: 80.99% | Balanced accuracy: 83.26%
+  Dropout precision: 68.91% | Dropout recall: 93.66%
+  F1: 0.7940 | F2: 0.8739
+  ROC-AUC: 0.9495 | Average precision: 0.9410
+  Brier score: 0.0822
+  TN=322, FP=120, FN=18, TP=266
+
+First-semester | LR
+  Validation-selected threshold: 0.21
+  Accuracy: 80.58% | Balanced accuracy: 82.92%
+  Dropout precision: 68.38% | Dropout recall: 93.66%
+  F1: 0.7905 | F2: 0.8721
+  ROC-AUC: 0.9514 | Average precision: 0.9436
+  Brier score: 0.0800
+  TN=319, FP=123, FN=18, TP=266
+
+Full (through second semester) | NN
+  Validation-selected threshold: 0.10
+  Accuracy: 82.37% | Balanced accuracy: 85.08%
+  Dropout precision: 69.60% | Dropout recall: 97.54%
+  F1: 0.8123 | F2: 0.9029
+  ROC-AUC: 0.9755 | Average precision: 0.9747
+  Brier score: 0.0490
+  TN=321, FP=121, FN=7, TP=277
+
+Full (through second semester) | LR
+  Validation-selected threshold: 0.16
+  Accuracy: 84.16% | Balanced accuracy: 86.49%
+  Dropout precision: 72.06% | Dropout recall: 97.18%
+  F1: 0.8276 | F2: 0.9085
+  ROC-AUC: 0.9766 | Average precision: 0.9745
+  Brier score: 0.0521
+  TN=335, FP=107, FN=8, TP=276
+
+EXPLAINING THE PRIMARY FIRST-SEMESTER NN
+
+At its frozen threshold of 0.15, the NN identified
+266 of 284 test dropout cases and missed 18.
+It also flagged 120 graduates for review. There were 322 correctly
+unflagged graduates. These counts refer only to the resolved test cohort.
+
+Full-model NN test ROC-AUC: 0.9755; first-semester NN: 0.9495.
+The full model uses information from a later intervention point.
+
+DEVELOPMENT-ONLY 5-FOLD CROSS-VALIDATION
+Mean ROC-AUC +/- fold population standard deviation (not a confidence interval):
+
+  First-semester LR: 0.9322 +/- 0.0037
+  First-semester NN: 0.9317 +/- 0.0052
+  Full (through second semester) LR: 0.9432 +/- 0.0058
+  Full (through second semester) NN: 0.9457 +/- 0.0060
+
+NETWORK TRAINING DETAILS
+
+First-semester: 28 raw features; 32 epochs run; best epoch 12 restored.
+Full (through second semester): 34 raw features; 35 epochs run; best epoch 15 restored.
+
+Important limits: Enrolled outcomes remain unknown. Their mentoring-demo
+scores are not validated future probabilities. This is retrospective
+evaluation on one supplied cohort; no deployment or fairness guarantee
+is established. The classification task and split differ from the
+original team plots, so those previous figures are not directly comparable.
+
+Notebook execution method: exact code cells executed sequentially with
+IPython; actual stdout and display outputs saved in the notebook.
+Environment versions and dataset SHA-256: outputs/run_manifest.json.
+Integration checks: outputs/verification.txt.
